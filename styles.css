@@ -1,0 +1,143 @@
+/* Form Styles */
+#xg-form {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+
+#xg-form label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#xg-form input[type="number"], #xg-form input[type="text"], #xg-form select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#xg-form button[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#xg-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Result Styles */
+#xg-result {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #d9edf7;
+  border-radius: 5px;
+}
+:root {
+  --primary-color: #4CAF50; /* Define your primary color */
+  --secondary-color: #f2f2f2; /* Define your secondary color */
+  --form-padding: 20px; /* Define your form padding */
+  --form-radius: 5px; /* Define your form border radius */
+}
+
+/* Form Styles */
+#xg-form {
+  padding: var(--form-padding);
+  background-color: var(--secondary-color);
+  border-radius: var(--form-radius);
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+
+#xg-form label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#xg-form input[type="number"], #xg-form input[type="text"], #xg-form select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: var(--form-radius);
+  border: 1px solid #ccc;
+}
+
+#xg-form button[type="submit"] {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#xg-form button[type="submit"]:hover {
+  background-color: darken(var(--primary-color), 10%); /* Change color on hover */
+  transform: scale(1.1); /* Scale button up on hover */
+}
+
+
+
+/* Responsive Grid Layout */
+#xg-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  #xg-form {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+body {
+  background-image: url('https://thewhistler.ng/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-13.53.06-e1671713748514.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+
+}
+#xg-form button[type="submit] {
+  background-color: var(--primary-color);
+  transition: background-color 0.3s;
+}
+
+#xg-form button[type="submit]:hover {
+  background-color: darken(var(--primary-color), 10%);
+  transform: scale(1.1);
+}
+transition: background-color 0.3s, transform 3.5s;
+transition: 3.3s;
+
+
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
